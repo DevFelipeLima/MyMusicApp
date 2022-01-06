@@ -1,0 +1,21 @@
+.Login{
+    display:grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #fbf9fc;
+
+}
+
+.Login>img{
+    margin: 0;
+    max-width: 70%;
+    
+}
+.Login>a{
+    padding: 20px;
+    border-radius: 99px;
+    background-image: linear-gradient(to right, #e624c5, #c928e9,#7d0fe4,#2777df,#1597ca);
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
