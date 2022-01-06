@@ -4,14 +4,17 @@ import Login from './Components/Login';
 import { getTokenFromUrl} from './spotify';
 import SpotifyWebApi from 'spotify-web-api-js';
 import Player from './Components/Player';
+import { useDataProviderValue } from './DataProvider';
 
 const Spotify = new SpotifyWebApi()
 
 function App() {
   const [token, setToken]=useState(null)
+  const [{}, dispatch]= useDataProviderValue()
 
   //vai rodar o codigo baseada em uma condição
   useEffect(()=>{
+  
     const hash = getTokenFromUrl()
     window.location.hash=""
 

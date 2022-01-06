@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import './index.css';
+import { DataProvider } from './DataProvider';
+import reducer, { initialState } from './reducer';
+
+
+
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DataProvider initialState={initialState} reducer={reducer}>
+      <App />
+    </DataProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
