@@ -9,32 +9,36 @@ import { useDataProviderValue } from './DataProvider';
 const Spotify = new SpotifyWebApi()
 
 function App() {
-  const [token, setToken]=useState(null)
-  const [{}, dispatch]= useDataProviderValue()
+  const [{user, token}, dispatch]= useDataProviderValue()
 
   //vai rodar o codigo baseada em uma condição
   useEffect(()=>{
   
     const hash = getTokenFromUrl()
     window.location.hash=""
-
     const _token = hash.access_token
       if(_token){
-        setToken(_token)
+        dispatch({
+          type: "SET_TOKEN",
+          token: _token
+        })
 
         Spotify.setAccessToken(_token)
         Spotify.getMe().then((user)=>{
-          console.log('user', user)
+          dispatch({
+            type: "SET_USER",
+            user: user,
+            })
         })
       }
-    console.log('token ok =>', token)
-  },[])
+    },[])
+  
   
   return (
     <div className="App">
       {/*Se Existir o token rederizar o Player,
       se não Renderiza a tela de login */}
-      {token?<Player />:<Login />}
+      {token?<Player Spotify={Spotify}/>:<Login />}
 
     </div>
   );

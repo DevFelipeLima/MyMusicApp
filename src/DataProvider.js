@@ -13,4 +13,4 @@ export const DataProvider = (
         </DataProviderContext.Provider>
     )
 
-    export const useDataProviderValue = () => useContext(DataProvider)
+    export const useDataProviderValue = () => useContext(DataProviderContext)
