@@ -1,0 +1,10 @@
+.SbOption{
+    color: rgb(10, 10, 10);
+    padding: 20px;
+    height: 10px;
+    cursor: pointer;
+    transition: 200ms color ease-in;    
+}
+.SbOption:hover{
+    color:rgb(164, 66, 245)
+}

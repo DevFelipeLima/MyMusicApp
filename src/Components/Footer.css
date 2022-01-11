@@ -4,5 +4,6 @@
     height: 65px;
     width: 100%;
     padding: 20px;
-    background: linear-gradient(to right, #9ec5f8,#357ddb);
+    background: linear-gradient(to right, #357ddb, #9ec5f8,#357ddb);
+    border:none
 }

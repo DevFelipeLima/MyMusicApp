@@ -2,14 +2,18 @@
     display: flex;
 }
 .SideBar{
-    border: 1px solid blue;
+    border: none;
     height: 100vh;
     flex: 0.2;
-    background-color: rgb(136, 45, 189);
-    color: rgb(242, 243, 236);
+    background: linear-gradient(to bottom, #e3ecf8,#357ddb);
+    color: rgb(17, 17, 16);
+}
+.SbLogo{
+    height: 80px;
+    
 }
 .BodyDiv{
-    border: 1px solid rgb(219, 124, 243);
+    border: none;
     height: 100vh;
     flex: 0.8;
     background: linear-gradient(to bottom, #ffbbf4, #e271f8,#b576f0,#539af7,#35758f);
