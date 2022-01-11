@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect } from 'react'
 import './App.css';
 import Login from './Components/Login';
 import { getTokenFromUrl} from './spotify';
@@ -17,6 +17,7 @@ function App() {
     const hash = getTokenFromUrl()
     window.location.hash=""
     const _token = hash.access_token
+
       if(_token){
         dispatch({
           type: "SET_TOKEN",
@@ -29,17 +30,16 @@ function App() {
             type: "SET_USER",
             user: user,
             })
-        })
-      }
-    },[])
-  
-  
-  return (
-    <div className="App">
+          })
+        }
+      },[])
+      return (
+        <div className="App">
       {/*Se Existir o token rederizar o Player,
       se não Renderiza a tela de login */}
       {token?<Player Spotify={Spotify}/>:<Login />}
 
+      
     </div>
   );
 }

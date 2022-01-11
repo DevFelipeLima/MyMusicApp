@@ -5,9 +5,14 @@
     border: 1px solid blue;
     height: 100vh;
     flex: 0.2;
+    background-color: rgb(136, 45, 189);
+    color: rgb(242, 243, 236);
 }
 .BodyDiv{
-    border: 1px solid rgb(187, 8, 231);
+    border: 1px solid rgb(219, 124, 243);
     height: 100vh;
-    flex: 0.8
+    flex: 0.8;
+    background: linear-gradient(to bottom, #ffbbf4, #e271f8,#b576f0,#539af7,#35758f);
+    color: rgb(243, 245, 235);
 }
+
