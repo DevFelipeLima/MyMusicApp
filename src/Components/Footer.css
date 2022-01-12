@@ -4,6 +4,7 @@
     height: 65px;
     width: 100%;
     padding: 20px;
-    background: linear-gradient(to right, #357ddb, #9ec5f8,#357ddb);
+    background: rgba(0, 0, 0, 0.445);
+    color: whitesmoke;
     border:none
 }

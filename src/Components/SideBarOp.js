@@ -1,10 +1,11 @@
 import React from 'react';
 import './SbOption.css'
 
-const SideBarOp = ({ title, icon}) => {
+const SideBarOp = ({ title, Icon}) => {
     return ( 
         <div className='SbOption'>
-            <p>{title}</p>
+            {Icon && <Icon className="SbOption_Icon" />}
+            {Icon?<h4>{title}</h4>: <p>{title}</p>}
         </div>
      );
 }
