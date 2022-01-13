@@ -5,7 +5,7 @@
     border: none;
     height: 100vh;
     flex: 0.2;
-    background: black;
+    background: linear-gradient(to bottom, #9abef3,#0342b8);
 }
 .SbLogo{
     height: 80px;
@@ -15,7 +15,7 @@
     border: none;
     height: 100vh;
     flex: 0.8;
-    background: linear-gradient(to bottom, #51d1586b,#0e8b2daf,#073f1be0,#0a0a0aea);
-    color: rgb(243, 245, 235);
+    background: linear-gradient(to bottom, #bfeeee,#0e7c8bfd,#1a64c5e0,#260649);
+    color: #21224d;;
 }
 
