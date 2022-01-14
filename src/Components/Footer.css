@@ -4,8 +4,21 @@
     height: 65px;
     width: 100%;
     padding: 20px;
-    background: #3e3f41fa;
+    background: #2c426dfa;
     color: #e9e9f1;
     justify-content: space-between;
+    display: flex
+}
+
+.Footer_1{
+    flex: 0.3
+}
+.Footer_2{
+    flex: 0.4;
+    padding: 0 100px;
+    display: flex;
+}
+.Footer_3{
+    flex: 0.4;
     display: flex
 }
