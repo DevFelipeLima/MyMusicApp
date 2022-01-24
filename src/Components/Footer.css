@@ -3,7 +3,6 @@
     bottom:0;
     height: 65px;
     width: 100%;
-    padding: 20px;
     background: #2c426dfa;
     color: #e9e9f1;
     justify-content: space-between;
@@ -17,8 +16,21 @@
     flex: 0.4;
     padding: 0 100px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+    cursor: pointer;
 }
+
+
 .Footer_3{
-    flex: 0.4;
-    display: flex
+    flex: 0.3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    cursor: pointer;
+
+
+    
 }
